@@ -10,10 +10,10 @@ st.markdown("Simulating how AI balances grid fluctuations with compute workloads
 
 #--- Sidebar Controls ---
 st.sidebar.header("Simulation Controls") 
-    steps = st.sidebar.slider("Time Steps", 50, 200, 100) 
-         base_workload = st.sidebar.slider("Base Workload", 50, 150, 80) 
-                      battery_capacity = st.sidebar.slider("Battery Capacity", 50, 200, 100) 
-                                      ai_enabled = st.sidebar.toggle("Enable AI Control", True)
+steps = st.sidebar.slider("Time Steps", 50, 200, 100) 
+base_workload = st.sidebar.slider("Base Workload", 50, 150, 80) 
+battery_capacity = st.sidebar.slider("Battery Capacity", 50, 200, 100) 
+ai_enabled = st.sidebar.toggle("Enable AI Control", True)
 
 #--- Generate Energy Data ---
 time = np.arange(steps) 
