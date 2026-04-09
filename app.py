@@ -8,22 +8,22 @@ st.set_page_config(page_title="AI Energy-Adaptive Data Center", layout="wide")
 st.title("⚡ AI-Powered Energy-Adaptive Data Center Demo") 
 st.markdown("Simulating how AI balances grid fluctuations with compute workloads")
 
---- Sidebar Controls ---
+#--- Sidebar Controls ---
 st.sidebar.header("Simulation Controls") 
     steps = st.sidebar.slider("Time Steps", 50, 200, 100) 
          base_workload = st.sidebar.slider("Base Workload", 50, 150, 80) 
                       battery_capacity = st.sidebar.slider("Battery Capacity", 50, 200, 100) 
                                       ai_enabled = st.sidebar.toggle("Enable AI Control", True)
 
---- Generate Energy Data ---
+#--- Generate Energy Data ---
 time = np.arange(steps) 
 solar = np.sin(time/10) * 40 + 50 
 wind = np.random.normal(40, 8, size=steps)
 
-Introduce disturbance
+#Introduce disturbance
 wind[int(steps0.4):int(steps0.6)] *= 0.3
 
---- Simulation Variables ---
+#--- Simulation Variables ---
 workload = base_workload 
 battery = battery_capacity
 
@@ -58,7 +58,7 @@ wind_series.append(wind[t])
 workload_series.append(workload)
 battery_series.append(battery)
 grid_stability.append(stability)
---- Charts ---
+#--- Charts ---
 col1, col2 = st.columns(2)
 
 with col1: 
@@ -80,7 +80,7 @@ st.subheader("Grid Stability Index")
                      fig3.add_trace(go.Scatter(y=grid_stability, name="Stability")) 
                      st.plotly_chart(fig3, use_container_width=True)
 
---- KPI Metrics ---
+#--- KPI Metrics ---
 col3, col4, col5 = st.columns(3)
 
 col3.metric("Final Workload", round(workload_series[-1], 2)) 
