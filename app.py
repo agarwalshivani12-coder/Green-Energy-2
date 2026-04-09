@@ -21,7 +21,7 @@ solar = np.sin(time/10) * 40 + 50
 wind = np.random.normal(40, 8, size=steps)
 
 #Introduce disturbance
-wind[int(steps0.4):int(steps0.6)] *= 0.3
+wind[int(steps*0.4):int(steps*0.6)] *= 0.3
 
 #--- Simulation Variables ---
 workload = base_workload 
