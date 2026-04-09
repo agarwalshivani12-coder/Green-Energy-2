@@ -1,4 +1,7 @@
-import streamlit as st import numpy as np import pandas as pd import plotly.graph_objects as go
+import streamlit as st 
+import numpy as np 
+import pandas as pd 
+import plotly.graph_objects as go
 
 st.set_page_config(page_title="AI Energy-Adaptive Data Center", layout="wide")
 
