@@ -62,7 +62,7 @@ grid_stability.append(stability)
 col1, col2 = st.columns(2)
 
 with col1: 
-         st.subheader("Energy vs Workload") 
+        st.subheader("Energy vs Workload") 
         fig1 = go.Figure() 
         fig1.add_trace(go.Scatter(y=solar_series, name="Solar")) 
         fig1.add_trace(go.Scatter(y=wind_series, name="Wind")) 
