@@ -91,7 +91,7 @@ st.markdown("---")
 st.markdown("### 💡 Demo Insight")
 
 if ai_enabled: st.success("AI dynamically adjusted workloads to stabilize the grid and optimize energy usage.") 
-             else: st.error("Without AI, the system is less stable and more prone to imbalance.")
+else: st.error("Without AI, the system is less stable and more prone to imbalance.")
 
 st.markdown("---") 
-         st.caption("Prototype for Greenko & AM Green – AI-driven grid balancing for AI data centers")
+st.caption("Prototype for Greenko & AM Green – AI-driven grid balancing for AI data centers")
