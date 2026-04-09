@@ -1,4 +1,4 @@
-pip install plotly
+conda install -c plotly plotly
 import streamlit as st 
 import numpy as np 
 import pandas as pd 
